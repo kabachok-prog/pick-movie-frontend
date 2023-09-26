@@ -11,7 +11,7 @@ export const header = () => {
         <nav class="header__nav">
           <ul class="header__nav-items">
             <li class="header__nav-item">
-              <a href="./admin.html" class="header__nav-item-link">Добавить фильм</a>
+              <a href="/admin" class="header__nav-item-link">Добавить фильм</a>
             </li>
           </ul>
         </nav>
