@@ -9,6 +9,8 @@
   &__content {
     display: flex;
     flex-direction: column;
+    pointer-events: none;
+    contain: content;
   }
 
   &__logo {
@@ -20,7 +22,7 @@
   }
 
   &__description {
-    padding: 20px;
+    padding: 17px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,11 +30,8 @@
     background: var(--grey-color);
   }
 
-  &__name,
-  &__rate,
-  &__genre,
-  &__time {
-    font-size: 3rem;
+  &__item {
+    font-size: 2.5rem;
     font-weight: 500;
 
     &:not(:last-child) {

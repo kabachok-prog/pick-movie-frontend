@@ -1,15 +1,15 @@
-export const filmCard = ({ rate, title, genre, time }) => {
+export const filmCard = ({ id, rating, title, genres, image, countrys }) => {
   return `
-  <li class="films__list-item">
+  <li class="films__list-item" data-card='${id}'>
     <div class="film__content">
       <div class="film__logo">
-        <img class="film__img" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/4057c4b8-8208-4a04-b169-26b0661453e3/x1000">
+        <img class="film__img" src="${image}">
       </div>
       <div class="film__description">
-        <div class="film__name">${title}</div>
-        <div class="film__rate">${rate} / 10</div> 
-        <div class="film__genre">${genre}</div>
-        <div class="film__time">${time} min</div>
+        <div class="film__item film__name">${title}</div>
+        <div class="film__item film__rate">${rating} / 10</div> 
+        <div class="film__item film__genre">${genres}</div>
+        <div class="film__item film__country">${countrys}</div>
       </div>
     </div>
   </li>
