@@ -1,4 +1,4 @@
-export const filmCard = ({ id, rating, title, genres, image, countrys }) => {
+export const filmCard = ({ id, rating, year, title, genres, image }) => {
   return `
   <li class="films__list-item" data-card='${id}'>
     <div class="film__content">
@@ -9,7 +9,7 @@ export const filmCard = ({ id, rating, title, genres, image, countrys }) => {
         <div class="film__item film__name">${title}</div>
         <div class="film__item film__rate">${rating} / 10</div> 
         <div class="film__item film__genre">${genres}</div>
-        <div class="film__item film__country">${countrys}</div>
+        <div class="film__item film__year">${year} г.</div>
       </div>
     </div>
   </li>

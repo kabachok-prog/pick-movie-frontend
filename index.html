@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,32 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="container">
+        <header class="header">
+          <div class="header__inner">
+            <a href="/" class="header__logo">
+              <img class="header__logo-img" src="./src/assets/img/logo.png" alt="logo" />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav-items">
+                <li class="header__nav-item">
+                  <a href="/admin.html" class="header__nav-item-link">Добавить фильм</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <section class="films">
+          <span class="loader"></span>
+          <ul class="films__list">
+
+          </ul>
+        </section>
+      </div>
+      <div class="modal"></div>
+    </div>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

@@ -11,9 +11,13 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
 
-  &--hide {
-    display: none;
+  &--open {
+    opacity: 1;
+    visibility: visible;
   }
 
   &__inner {

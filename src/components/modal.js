@@ -1,6 +1,5 @@
 export const filmModal = ({ title, description, year, rating, genres, image, countrys }) => {
   return `
-   <div class="modal">
     <div class="modal__window">
       <div class="modal__inner">
         <div class="modal__content">
@@ -21,6 +20,5 @@ export const filmModal = ({ title, description, year, rating, genres, image, cou
         </div>
       </div>
     </div>
-   </div>
   `
 }
