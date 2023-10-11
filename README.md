@@ -7,14 +7,14 @@ Backend repository - <a href="https://github.com/Xoxyxy/pick-movie-backend">pick
 ## Instructions
 
 ### Frontend:
-* npm i - downloading packages
-* npm run dev - starting the server
-* npm run build - building the project
+* pnpm i - downloading packages
+* pnpm run dev - starting the server
+* pnpm run build - building the project
 * go to <a href="http://localhost:4000/">http://localhost:4000/</a>
 
 ### Backend:
-* npm i - downloading packages
+* pnpm i - downloading packages
 * overwrite the .env.example file and write your database there
-* npm prisma migrate dev - prisma migration
-* npm start:dev - starting the server
+* pnpm prisma migrate dev - prisma migration
+* pnpm start:dev - starting the server
 
