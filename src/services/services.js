@@ -47,6 +47,10 @@ export const deleteFilm = async (id) => {
   try {
     const response = await fetch(`http://localhost:3000/api/admin/delete/${id}`, {
       method: 'DELETE',
+      headers: {
+        accept: 'application/json, text/plain, */*',
+        'content-type': 'application/json;charset=utf-8',
+      },
     })
     return await response.json()
   } catch (error) {

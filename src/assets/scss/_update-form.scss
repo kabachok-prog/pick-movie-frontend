@@ -1,0 +1,40 @@
+.update {
+  &__form {
+    background: var(--orange-color);
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+
+}
+
+.update-form__form-btn {
+  background: var(--black-color);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.update-form__modal {
+  width: 700px;
+}

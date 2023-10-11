@@ -1,19 +1,21 @@
 import { renderModal } from './render'
 import { getFilmById } from '../services/services'
+import { updateFilmById } from './updateFilm'
+import { deleteFilmById } from './deleteFilm'
+
 export const modal = () => {
   const films = document.querySelector('.films__list')
   const modal = document.querySelector('.modal')
   const body = document.querySelector('body')
 
   films.addEventListener('click', async (e) => {
-    console.log(e.target)
     if (e.target.classList.contains('films__list-item')) {
       const id = e.target.getAttribute('data-card')
       const response = await getFilmById(id)
-      console.log(response)
       if (response.id == id) {
-        console.log(response.id)
         openModal(response)
+        updateFilmById(response)
+        deleteFilmById()
         body.classList.add('body--fixed')
       }
     }

@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pick Movie - Admin</title>
   </head>
   <body>
     <div class="container">
-      <span class="loader"></span>
+      <header class="header">
+        <div class="header__inner">
+          <a href="/" class="header__logo">
+            <img class="header__logo-img" src="./src/assets/img/logo.png" alt="logo" />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-items">
+              <li class="header__nav-item">
+                <a href="/admin.html" class="header__nav-item-link">Добавить фильм</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="loader-wrapper">
+        <span class="loader loader--show"></span>
+      </div>
       <div class="admin-panel__inner">
         <h1>Добавить фильм</h1>
         <form class="admin-panel__form">

@@ -1,5 +1,4 @@
 import './assets/scss/main.scss'
-import { createFilm } from './core/form'
-import { sendForm } from './services/services'
+import { createFilm } from './core/createFilm'
 
 createFilm('.admin-panel__form')
